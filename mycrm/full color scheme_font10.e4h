@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HighlightingStyles SYSTEM "HighlightingStyles-4.3.dtd">
+<!-- Eric4 highlighting styles -->
+<!-- Saved: 2012-08-20, 23:06:41 -->
+<!-- Author:  -->
+<HighlightingStyles version="4.3">
+  <Lexer name="Java">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C++ comment</Style>
+    <Style style="3" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C comment</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="8" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">IDL UUID</Style>
+    <Style style="9" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pre-processor block</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="12" color="#000000" paper="#e0c0e0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="15" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C++ comment</Style>
+    <Style style="16" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Secondary keywords and identifiers</Style>
+    <Style style="17" color="#3060a0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword</Style>
+    <Style style="18" color="#804020" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword error</Style>
+    <Style style="19" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Global classes and typedefs</Style>
+    <Style style="20" color="#7f007f" paper="#fff3ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">C++ raw string</Style>
+    <Style style="40" color="#b090b0" paper="#fff3ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ raw string</Style>
+    <Style style="64" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive default</Style>
+    <Style style="65" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C comment</Style>
+    <Style style="66" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ comment</Style>
+    <Style style="67" color="#d0d0d0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C comment</Style>
+    <Style style="68" color="#90b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive number</Style>
+    <Style style="69" color="#9090b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive keyword</Style>
+    <Style style="70" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive double-quoted string</Style>
+    <Style style="71" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive single-quoted string</Style>
+    <Style style="72" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive IDL UUID</Style>
+    <Style style="73" color="#b0b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive pre-processor block</Style>
+    <Style style="74" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive operator</Style>
+    <Style style="75" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive identifier</Style>
+    <Style style="76" color="#000000" paper="#e0c0e0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Inactive unclosed string</Style>
+    <Style style="79" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C++ comment</Style>
+    <Style style="80" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive secondary keywords and identifiers</Style>
+    <Style style="81" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword</Style>
+    <Style style="82" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword error</Style>
+    <Style style="83" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive global classes and typedefs</Style>
+  </Lexer>
+  <Lexer name="VHDL">
+    <Style style="0" color="#800080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#3f7f3f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment line</Style>
+    <Style style="3" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="4" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">String</Style>
+    <Style style="5" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="6" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="7" color="#000000" paper="#e0c0e0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="8" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="9" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Standard operator</Style>
+    <Style style="10" color="#804020" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Attribute</Style>
+    <Style style="11" color="#808020" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Standard function</Style>
+    <Style style="12" color="#208020" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Standard package</Style>
+    <Style style="13" color="#208080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Standard type</Style>
+    <Style style="14" color="#804020" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">User defined</Style>
+  </Lexer>
+  <Lexer name="JavaScript">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C++ comment</Style>
+    <Style style="3" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C comment</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="8" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">IDL UUID</Style>
+    <Style style="9" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pre-processor block</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="12" color="#000000" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="14" color="#3f7f3f" paper="#e0f0ff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Regular expression</Style>
+    <Style style="15" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C++ comment</Style>
+    <Style style="16" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Secondary keywords and identifiers</Style>
+    <Style style="17" color="#3060a0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword</Style>
+    <Style style="18" color="#804020" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword error</Style>
+    <Style style="19" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Global classes and typedefs</Style>
+    <Style style="20" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">C++ raw string</Style>
+    <Style style="40" color="#b090b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ raw string</Style>
+    <Style style="64" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive default</Style>
+    <Style style="65" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C comment</Style>
+    <Style style="66" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ comment</Style>
+    <Style style="67" color="#d0d0d0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C comment</Style>
+    <Style style="68" color="#90b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive number</Style>
+    <Style style="69" color="#9090b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive keyword</Style>
+    <Style style="70" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive double-quoted string</Style>
+    <Style style="71" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive single-quoted string</Style>
+    <Style style="72" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive IDL UUID</Style>
+    <Style style="73" color="#b0b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive pre-processor block</Style>
+    <Style style="74" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive operator</Style>
+    <Style style="75" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive identifier</Style>
+    <Style style="76" color="#000000" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Inactive unclosed string</Style>
+    <Style style="79" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C++ comment</Style>
+    <Style style="80" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive secondary keywords and identifiers</Style>
+    <Style style="81" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword</Style>
+    <Style style="82" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword error</Style>
+    <Style style="83" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive global classes and typedefs</Style>
+  </Lexer>
+  <Lexer name="Makefile">
+    <Style style="0" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Preprocessor</Style>
+    <Style style="3" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Variable</Style>
+    <Style style="4" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="5" color="#a00000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Target</Style>
+    <Style style="9" color="#ffff00" paper="#ff0000" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Error</Style>
+  </Lexer>
+  <Lexer name="Perl">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#ffff00" paper="#ff0000" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Error</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="3" color="#004000" paper="#e0ffe0" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="1">POD</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="12" color="#000000" paper="#ffe0e0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Scalar</Style>
+    <Style style="13" color="#000000" paper="#ffffe0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Array</Style>
+    <Style style="14" color="#000000" paper="#ffe0ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Hash</Style>
+    <Style style="15" color="#000000" paper="#e0e0e0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Symbol table</Style>
+    <Style style="17" color="#000000" paper="#a0ffa0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Regular expression</Style>
+    <Style style="18" color="#000000" paper="#f0e080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Substitution</Style>
+    <Style style="20" color="#ffff00" paper="#a08080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Backticks</Style>
+    <Style style="21" color="#600000" paper="#fff0d8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Data section</Style>
+    <Style style="22" color="#000000" paper="#ddd0dd" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Here document delimiter</Style>
+    <Style style="23" color="#7f007f" paper="#ddd0dd" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Single-quoted here document</Style>
+    <Style style="24" color="#7f007f" paper="#ddd0dd" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Double-quoted here document</Style>
+    <Style style="25" color="#7f007f" paper="#ddd0dd" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="1">Backtick here document</Style>
+    <Style style="26" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Quoted string (q)</Style>
+    <Style style="27" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Quoted string (qq)</Style>
+    <Style style="28" color="#ffff00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Quoted string (qx)</Style>
+    <Style style="29" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Quoted string (qr)</Style>
+    <Style style="30" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Quoted string (qw)</Style>
+    <Style style="31" color="#004000" paper="#c0ffc0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">POD verbatim</Style>
+    <Style style="40" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">Subroutine prototype</Style>
+    <Style style="41" color="#c000c0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Format identifier</Style>
+    <Style style="42" color="#c000c0" paper="#fff0ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Format body</Style>
+    <Style style="43" color="#d00000" paper="#ffffff" font="Courier New,10,-1,5,75,0,0,0,0,0" eolfill="0">Double-quoted string (interpolated variable)</Style>
+    <Style style="44" color="#000000" paper="#f0e080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Translation</Style>
+    <Style style="54" color="#d00000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Regular expression (interpolated variable)</Style>
+    <Style style="55" color="#d00000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Substitution (interpolated variable)</Style>
+    <Style style="57" color="#d00000" paper="#a08080" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Backticks (interpolated variable)</Style>
+    <Style style="61" color="#d00000" paper="#ddd0dd" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Double-quoted here document (interpolated variable)</Style>
+    <Style style="62" color="#d00000" paper="#ddd0dd" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Backtick here document (interpolated variable)</Style>
+    <Style style="64" color="#d00000" paper="#ffffff" font="Courier New,10,-1,5,75,0,0,0,0,0" eolfill="0">Quoted string (qq, interpolated variable)</Style>
+    <Style style="65" color="#d00000" paper="#a08080" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Quoted string (qx, interpolated variable)</Style>
+    <Style style="66" color="#d00000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Quoted string (qr, interpolated variable)</Style>
+  </Lexer>
+  <Lexer name="Lua">
+    <Style style="0" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#d0f0f0" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">Comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Line comment</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">String</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Character</Style>
+    <Style style="8" color="#7f007f" paper="#e0ffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Literal string</Style>
+    <Style style="9" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Preprocessor</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="12" color="#000000" paper="#e0c0e0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="13" color="#00007f" paper="#d0ffd0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Basic functions</Style>
+    <Style style="14" color="#00007f" paper="#d0d0ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">String, table and maths functions</Style>
+    <Style style="15" color="#00007f" paper="#ffd0d0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Coroutines, i/o and system facilities</Style>
+    <Style style="16" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 1</Style>
+    <Style style="17" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 2</Style>
+    <Style style="18" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 3</Style>
+    <Style style="19" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 4</Style>
+    <Style style="20" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Label</Style>
+  </Lexer>
+  <Lexer name="IDL">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C++ comment</Style>
+    <Style style="3" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C comment</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="8" color="#804080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">UUID</Style>
+    <Style style="9" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pre-processor block</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="12" color="#000000" paper="#e0c0e0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="15" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C++ comment</Style>
+    <Style style="16" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Secondary keywords and identifiers</Style>
+    <Style style="17" color="#3060a0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword</Style>
+    <Style style="18" color="#804020" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword error</Style>
+    <Style style="19" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Global classes and typedefs</Style>
+    <Style style="20" color="#7f007f" paper="#fff3ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">C++ raw string</Style>
+    <Style style="40" color="#b090b0" paper="#fff3ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ raw string</Style>
+    <Style style="64" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive default</Style>
+    <Style style="65" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C comment</Style>
+    <Style style="66" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ comment</Style>
+    <Style style="67" color="#d0d0d0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C comment</Style>
+    <Style style="68" color="#90b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive number</Style>
+    <Style style="69" color="#9090b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive keyword</Style>
+    <Style style="70" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive double-quoted string</Style>
+    <Style style="71" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive single-quoted string</Style>
+    <Style style="72" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive IDL UUID</Style>
+    <Style style="73" color="#b0b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive pre-processor block</Style>
+    <Style style="74" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive operator</Style>
+    <Style style="75" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive identifier</Style>
+    <Style style="76" color="#000000" paper="#e0c0e0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Inactive unclosed string</Style>
+    <Style style="79" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C++ comment</Style>
+    <Style style="80" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive secondary keywords and identifiers</Style>
+    <Style style="81" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword</Style>
+    <Style style="82" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword error</Style>
+    <Style style="83" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive global classes and typedefs</Style>
+  </Lexer>
+  <Lexer name="POV">
+    <Style style="0" color="#ff0080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment line</Style>
+    <Style style="3" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="4" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="5" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">String</Style>
+    <Style style="7" color="#000000" paper="#e0c0e0" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="8" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Directive</Style>
+    <Style style="9" color="#804020" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,1,0,0,0,0" eolfill="0">Bad directive</Style>
+    <Style style="10" color="#00007f" paper="#ffd0d0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Objects, CSG and appearance</Style>
+    <Style style="11" color="#00007f" paper="#ffffd0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Types, modifiers and items</Style>
+    <Style style="12" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Predefined identifiers</Style>
+    <Style style="13" color="#00007f" paper="#d0d0ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Predefined functions</Style>
+    <Style style="14" color="#00007f" paper="#d0ffd0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 1</Style>
+    <Style style="15" color="#00007f" paper="#d0d0d0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 2</Style>
+    <Style style="16" color="#00007f" paper="#e0e0e0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 3</Style>
+  </Lexer>
+  <Lexer name="Fortran77">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="3" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="4" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="5" color="#000000" paper="#e0c0e0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="6" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="7" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="8" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="9" color="#b00040" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Intrinsic function</Style>
+    <Style style="10" color="#b04080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Extended function</Style>
+    <Style style="11" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pre-processor block</Style>
+    <Style style="12" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Dotted operator</Style>
+    <Style style="13" color="#e0c0e0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Label</Style>
+    <Style style="14" color="#000000" paper="#f0e080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Continuation</Style>
+  </Lexer>
+  <Lexer name="Python">
+    <Style style="0" color="#808080" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#0064ff" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#007f7f" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="3" color="#026906" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="4" color="#056906" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="5" color="#0000ff" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f0000" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Triple single-quoted string</Style>
+    <Style style="7" color="#7f0000" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Triple double-quoted string</Style>
+    <Style style="8" color="#0000ff" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,75,0,0,0,0,0" eolfill="0">Class name</Style>
+    <Style style="9" color="#0000a4" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,75,0,0,0,0,0" eolfill="0">Function or method name</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="12" color="#7f7f7f" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Comment block</Style>
+    <Style style="13" color="#000000" paper="#e0c0e0" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Unclosed string</Style>
+    <Style style="14" color="#407090" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Highlighted identifier</Style>
+    <Style style="15" color="#805000" paper="#ffffff" font="DejaVu Sans Mono,10,-1,5,50,0,0,0,0,0" eolfill="0">Decorator</Style>
+  </Lexer>
+  <Lexer name="TCL">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#f0ffe0" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment line</Style>
+    <Style style="3" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="4" color="#7f007f" paper="#fff0f0" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Quoted keyword</Style>
+    <Style style="5" color="#7f007f" paper="#fff0f0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Quoted string</Style>
+    <Style style="6" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="7" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="8" color="#7f7f00" paper="#effff0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Substitution</Style>
+    <Style style="9" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Brace substitution</Style>
+    <Style style="10" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Modifier</Style>
+    <Style style="11" color="#00007f" paper="#ffff80" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Expand keyword</Style>
+    <Style style="12" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">TCL keyword</Style>
+    <Style style="13" color="#00007f" paper="#e0fff0" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Tk keyword</Style>
+    <Style style="14" color="#00007f" paper="#fff0f0" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">iTCL keyword</Style>
+    <Style style="15" color="#00007f" paper="#ffd0d0" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Tk command</Style>
+    <Style style="16" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 1</Style>
+    <Style style="17" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 2</Style>
+    <Style style="18" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 3</Style>
+    <Style style="19" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 4</Style>
+    <Style style="20" color="#007f00" paper="#f0fff0" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">Comment box</Style>
+    <Style style="21" color="#000000" paper="#f0fff0" font="Comic Sans MS,8,-1,5,50,0,0,0,0,0" eolfill="0">Comment block</Style>
+  </Lexer>
+  <Lexer name="HTML">
+    <Style style="0" color="#000000" paper="#ffffff" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="0">HTML default</Style>
+    <Style style="1" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Tag</Style>
+    <Style style="2" color="#ff0000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Unknown tag</Style>
+    <Style style="3" color="#008080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Attribute</Style>
+    <Style style="4" color="#ff0000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Unknown attribute</Style>
+    <Style style="5" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">HTML number</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">HTML double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">HTML single-quoted string</Style>
+    <Style style="8" color="#800080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Other text in a tag</Style>
+    <Style style="9" color="#808000" paper="#ffffff" font="Verdana,9,-1,5,50,0,0,0,0,0" eolfill="0">HTML comment</Style>
+    <Style style="10" color="#800080" paper="#ffffff" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="0">Entity</Style>
+    <Style style="11" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">End of a tag</Style>
+    <Style style="12" color="#0000ff" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an XML fragment</Style>
+    <Style style="13" color="#0000ff" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">End of an XML fragment</Style>
+    <Style style="14" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Script tag</Style>
+    <Style style="15" color="#000000" paper="#ffff00" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP fragment with @</Style>
+    <Style style="16" color="#000000" paper="#ffdf00" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP fragment</Style>
+    <Style style="17" color="#000000" paper="#ffdf00" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">CDATA</Style>
+    <Style style="18" color="#0000ff" paper="#ffefbf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of a PHP fragment</Style>
+    <Style style="19" color="#ff00ff" paper="#ffefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Unquoted HTML value</Style>
+    <Style style="20" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">ASP X-Code comment</Style>
+    <Style style="21" color="#000080" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML default</Style>
+    <Style style="22" color="#000080" paper="#efefff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">SGML command</Style>
+    <Style style="23" color="#006600" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">First parameter of an SGML command</Style>
+    <Style style="24" color="#800000" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML double-quoted string</Style>
+    <Style style="25" color="#993300" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML single-quoted string</Style>
+    <Style style="26" color="#800000" paper="#ff6666" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML error</Style>
+    <Style style="27" color="#3366ff" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML special entity</Style>
+    <Style style="29" color="#808000" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML comment</Style>
+    <Style style="30" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">First parameter comment of an SGML command</Style>
+    <Style style="31" color="#000066" paper="#cccce0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML block default</Style>
+    <Style style="40" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of a JavaScript fragment</Style>
+    <Style style="41" color="#000000" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="1">JavaScript default</Style>
+    <Style style="42" color="#007f00" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">JavaScript comment</Style>
+    <Style style="43" color="#007f00" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript line comment</Style>
+    <Style style="44" color="#3f703f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="1">JavaDoc style JavaScript comment</Style>
+    <Style style="45" color="#007f7f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript number</Style>
+    <Style style="46" color="#000000" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript word</Style>
+    <Style style="47" color="#00007f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="0">JavaScript keyword</Style>
+    <Style style="48" color="#7f007f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript double-quoted string</Style>
+    <Style style="49" color="#7f007f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript single-quoted string</Style>
+    <Style style="50" color="#000000" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="0">JavaScript symbol</Style>
+    <Style style="51" color="#000000" paper="#bfbbb0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">JavaScript unclosed string</Style>
+    <Style style="52" color="#000000" paper="#ffbbb0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript regular expression</Style>
+    <Style style="55" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP JavaScript fragment</Style>
+    <Style style="56" color="#000000" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="1">ASP JavaScript default</Style>
+    <Style style="57" color="#007f00" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP JavaScript comment</Style>
+    <Style style="58" color="#007f00" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript line comment</Style>
+    <Style style="59" color="#7f7f7f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="1">JavaDoc style ASP JavaScript comment</Style>
+    <Style style="60" color="#007f7f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript number</Style>
+    <Style style="61" color="#000000" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript word</Style>
+    <Style style="62" color="#00007f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="0">ASP JavaScript keyword</Style>
+    <Style style="63" color="#7f007f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript double-quoted string</Style>
+    <Style style="64" color="#7f007f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript single-quoted string</Style>
+    <Style style="65" color="#000000" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="0">ASP JavaScript symbol</Style>
+    <Style style="66" color="#000000" paper="#bfbbb0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP JavaScript unclosed string</Style>
+    <Style style="67" color="#000000" paper="#ffbbb0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript regular expression</Style>
+    <Style style="70" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of a VBScript fragment</Style>
+    <Style style="71" color="#000000" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript default</Style>
+    <Style style="72" color="#008000" paper="#efefff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript comment</Style>
+    <Style style="73" color="#008080" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript number</Style>
+    <Style style="74" color="#000080" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,75,0,0,0,0,0" eolfill="1">VBScript keyword</Style>
+    <Style style="75" color="#800080" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript string</Style>
+    <Style style="76" color="#000080" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript identifier</Style>
+    <Style style="77" color="#000080" paper="#7f7fff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript unclosed string</Style>
+    <Style style="80" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP VBScript fragment</Style>
+    <Style style="81" color="#000000" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript default</Style>
+    <Style style="82" color="#008000" paper="#cfcfef" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript comment</Style>
+    <Style style="83" color="#008080" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript number</Style>
+    <Style style="84" color="#000080" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,75,0,0,0,0,0" eolfill="1">ASP VBScript keyword</Style>
+    <Style style="85" color="#800080" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript string</Style>
+    <Style style="86" color="#000080" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript identifier</Style>
+    <Style style="87" color="#000080" paper="#7f7fff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript unclosed string</Style>
+    <Style style="90" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of a Python fragment</Style>
+    <Style style="91" color="#808080" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python default</Style>
+    <Style style="92" color="#007f00" paper="#efffef" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">Python comment</Style>
+    <Style style="93" color="#007f7f" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python number</Style>
+    <Style style="94" color="#7f007f" paper="#efffef" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Python double-quoted string</Style>
+    <Style style="95" color="#7f007f" paper="#efffef" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Python single-quoted string</Style>
+    <Style style="96" color="#00007f" paper="#efffef" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Python keyword</Style>
+    <Style style="97" color="#7f0000" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python triple single-quoted string</Style>
+    <Style style="98" color="#7f0000" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python triple double-quoted string</Style>
+    <Style style="99" color="#0000ff" paper="#efffef" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Python class name</Style>
+    <Style style="100" color="#007f7f" paper="#efffef" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Python function or method name</Style>
+    <Style style="101" color="#000000" paper="#efffef" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Python operator</Style>
+    <Style style="102" color="#000000" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python identifier</Style>
+    <Style style="105" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP Python fragment</Style>
+    <Style style="106" color="#808080" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python default</Style>
+    <Style style="107" color="#007f00" paper="#cfefcf" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python comment</Style>
+    <Style style="108" color="#007f7f" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python number</Style>
+    <Style style="109" color="#7f007f" paper="#cfefcf" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python double-quoted string</Style>
+    <Style style="110" color="#7f007f" paper="#cfefcf" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python single-quoted string</Style>
+    <Style style="111" color="#00007f" paper="#cfefcf" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">ASP Python keyword</Style>
+    <Style style="112" color="#7f0000" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python triple single-quoted string</Style>
+    <Style style="113" color="#7f0000" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python triple double-quoted string</Style>
+    <Style style="114" color="#0000ff" paper="#cfefcf" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">ASP Python class name</Style>
+    <Style style="115" color="#007f7f" paper="#cfefcf" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">ASP Python function or method name</Style>
+    <Style style="116" color="#000000" paper="#cfefcf" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">ASP Python operator</Style>
+    <Style style="117" color="#000000" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python identifier</Style>
+    <Style style="118" color="#000033" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">PHP default</Style>
+    <Style style="119" color="#007f00" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">PHP double-quoted string</Style>
+    <Style style="120" color="#009f00" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">PHP single-quoted string</Style>
+    <Style style="121" color="#7f007f" paper="#fff8f8" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">PHP keyword</Style>
+    <Style style="122" color="#cc9900" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">PHP number</Style>
+    <Style style="123" color="#00007f" paper="#fff8f8" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">PHP variable</Style>
+    <Style style="124" color="#999999" paper="#fff8f8" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">PHP comment</Style>
+    <Style style="125" color="#666666" paper="#fff8f8" font="Comic Sans MS,9,-1,5,50,1,0,0,0,0" eolfill="0">PHP line comment</Style>
+    <Style style="126" color="#00007f" paper="#fff8f8" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">PHP double-quoted variable</Style>
+    <Style style="127" color="#000000" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">PHP operator</Style>
+  </Lexer>
+  <Lexer name="Ruby">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#000000" paper="#ff0000" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Error</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="3" color="#004000" paper="#c0ffc0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">POD</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="8" color="#0000ff" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Class name</Style>
+    <Style style="9" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Function or method name</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="12" color="#000000" paper="#a0ffa0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Regular expression</Style>
+    <Style style="13" color="#800080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Global</Style>
+    <Style style="14" color="#c0a030" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Symbol</Style>
+    <Style style="15" color="#a000a0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Module name</Style>
+    <Style style="16" color="#b00080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Instance variable</Style>
+    <Style style="17" color="#8000b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Class variable</Style>
+    <Style style="18" color="#ffff00" paper="#a08080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Backticks</Style>
+    <Style style="19" color="#600000" paper="#fff0d8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Data section</Style>
+    <Style style="20" color="#000000" paper="#ddd0dd" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Here document delimiter</Style>
+    <Style style="21" color="#7f007f" paper="#ddd0dd" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Here document</Style>
+    <Style style="24" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">%q string</Style>
+    <Style style="25" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">%Q string</Style>
+    <Style style="26" color="#ffff00" paper="#a08080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">%x string</Style>
+    <Style style="27" color="#000000" paper="#a0ffa0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">%r string</Style>
+    <Style style="28" color="#000000" paper="#ffffe0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">%w string</Style>
+    <Style style="29" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Demoted keyword</Style>
+    <Style style="30" color="#000000" paper="#ff8080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">stdin</Style>
+    <Style style="31" color="#000000" paper="#ff8080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">stdout</Style>
+    <Style style="40" color="#000000" paper="#ff8080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">stderr</Style>
+  </Lexer>
+  <Lexer name="Properties">
+    <Style style="0" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f7f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#7f007f" paper="#e0f0f0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Section</Style>
+    <Style style="3" color="#b06000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Assignment</Style>
+    <Style style="4" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default value</Style>
+    <Style style="5" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Key</Style>
+  </Lexer>
+  <Lexer name="Bash">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#ffff00" paper="#ff0000" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Error</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="3" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="4" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="5" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="7" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="8" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="9" color="#000000" paper="#ffe0e0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Scalar</Style>
+    <Style style="10" color="#000000" paper="#ffffe0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Parameter expansion</Style>
+    <Style style="11" color="#ffff00" paper="#a08080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Backticks</Style>
+    <Style style="12" color="#000000" paper="#ddd0dd" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Here document delimiter</Style>
+    <Style style="13" color="#7f007f" paper="#ddd0dd" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Single-quoted here document</Style>
+  </Lexer>
+  <Lexer name="XML">
+    <Style style="0" color="#000000" paper="#ffffff" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="0">HTML default</Style>
+    <Style style="1" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Tag</Style>
+    <Style style="2" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Unknown tag</Style>
+    <Style style="3" color="#008080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Attribute</Style>
+    <Style style="4" color="#008080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Unknown attribute</Style>
+    <Style style="5" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">HTML number</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">HTML double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">HTML single-quoted string</Style>
+    <Style style="8" color="#800080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Other text in a tag</Style>
+    <Style style="9" color="#808000" paper="#ffffff" font="Verdana,9,-1,5,50,0,0,0,0,0" eolfill="0">HTML comment</Style>
+    <Style style="10" color="#800080" paper="#ffffff" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="0">Entity</Style>
+    <Style style="11" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">End of a tag</Style>
+    <Style style="12" color="#800080" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Start of an XML fragment</Style>
+    <Style style="13" color="#800080" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">End of an XML fragment</Style>
+    <Style style="14" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Script tag</Style>
+    <Style style="15" color="#000000" paper="#ffff00" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP fragment with @</Style>
+    <Style style="16" color="#000000" paper="#ffdf00" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP fragment</Style>
+    <Style style="17" color="#800000" paper="#fff0f0" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="1">CDATA</Style>
+    <Style style="18" color="#800000" paper="#ffefbf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of a PHP fragment</Style>
+    <Style style="19" color="#608060" paper="#ffefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Unquoted HTML value</Style>
+    <Style style="20" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">ASP X-Code comment</Style>
+    <Style style="21" color="#000080" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML default</Style>
+    <Style style="22" color="#000080" paper="#efefff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">SGML command</Style>
+    <Style style="23" color="#006600" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">First parameter of an SGML command</Style>
+    <Style style="24" color="#800000" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML double-quoted string</Style>
+    <Style style="25" color="#993300" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML single-quoted string</Style>
+    <Style style="26" color="#800000" paper="#ff6666" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML error</Style>
+    <Style style="27" color="#3366ff" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML special entity</Style>
+    <Style style="29" color="#808000" paper="#efefff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML comment</Style>
+    <Style style="30" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">First parameter comment of an SGML command</Style>
+    <Style style="31" color="#000066" paper="#cccce0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SGML block default</Style>
+    <Style style="40" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of a JavaScript fragment</Style>
+    <Style style="41" color="#000000" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="1">JavaScript default</Style>
+    <Style style="42" color="#007f00" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">JavaScript comment</Style>
+    <Style style="43" color="#007f00" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript line comment</Style>
+    <Style style="44" color="#3f703f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="1">JavaDoc style JavaScript comment</Style>
+    <Style style="45" color="#007f7f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript number</Style>
+    <Style style="46" color="#000000" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript word</Style>
+    <Style style="47" color="#00007f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="0">JavaScript keyword</Style>
+    <Style style="48" color="#7f007f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript double-quoted string</Style>
+    <Style style="49" color="#7f007f" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript single-quoted string</Style>
+    <Style style="50" color="#000000" paper="#f0f0ff" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="0">JavaScript symbol</Style>
+    <Style style="51" color="#000000" paper="#bfbbb0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">JavaScript unclosed string</Style>
+    <Style style="52" color="#000000" paper="#ffbbb0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">JavaScript regular expression</Style>
+    <Style style="55" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP JavaScript fragment</Style>
+    <Style style="56" color="#000000" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="1">ASP JavaScript default</Style>
+    <Style style="57" color="#007f00" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP JavaScript comment</Style>
+    <Style style="58" color="#007f00" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript line comment</Style>
+    <Style style="59" color="#7f7f7f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="1">JavaDoc style ASP JavaScript comment</Style>
+    <Style style="60" color="#007f7f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript number</Style>
+    <Style style="61" color="#000000" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript word</Style>
+    <Style style="62" color="#00007f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="0">ASP JavaScript keyword</Style>
+    <Style style="63" color="#7f007f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript double-quoted string</Style>
+    <Style style="64" color="#7f007f" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript single-quoted string</Style>
+    <Style style="65" color="#000000" paper="#dfdf7f" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="0">ASP JavaScript symbol</Style>
+    <Style style="66" color="#000000" paper="#bfbbb0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP JavaScript unclosed string</Style>
+    <Style style="67" color="#000000" paper="#ffbbb0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">ASP JavaScript regular expression</Style>
+    <Style style="70" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of a VBScript fragment</Style>
+    <Style style="71" color="#000000" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript default</Style>
+    <Style style="72" color="#008000" paper="#efefff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript comment</Style>
+    <Style style="73" color="#008080" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript number</Style>
+    <Style style="74" color="#000080" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,75,0,0,0,0,0" eolfill="1">VBScript keyword</Style>
+    <Style style="75" color="#800080" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript string</Style>
+    <Style style="76" color="#000080" paper="#efefff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript identifier</Style>
+    <Style style="77" color="#000080" paper="#7f7fff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">VBScript unclosed string</Style>
+    <Style style="80" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP VBScript fragment</Style>
+    <Style style="81" color="#000000" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript default</Style>
+    <Style style="82" color="#008000" paper="#cfcfef" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript comment</Style>
+    <Style style="83" color="#008080" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript number</Style>
+    <Style style="84" color="#000080" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,75,0,0,0,0,0" eolfill="1">ASP VBScript keyword</Style>
+    <Style style="85" color="#800080" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript string</Style>
+    <Style style="86" color="#000080" paper="#cfcfef" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript identifier</Style>
+    <Style style="87" color="#000080" paper="#7f7fff" font="Lucida Sans Unicode,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP VBScript unclosed string</Style>
+    <Style style="90" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of a Python fragment</Style>
+    <Style style="91" color="#808080" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python default</Style>
+    <Style style="92" color="#007f00" paper="#efffef" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">Python comment</Style>
+    <Style style="93" color="#007f7f" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python number</Style>
+    <Style style="94" color="#7f007f" paper="#efffef" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Python double-quoted string</Style>
+    <Style style="95" color="#7f007f" paper="#efffef" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Python single-quoted string</Style>
+    <Style style="96" color="#00007f" paper="#efffef" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Python keyword</Style>
+    <Style style="97" color="#7f0000" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python triple single-quoted string</Style>
+    <Style style="98" color="#7f0000" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python triple double-quoted string</Style>
+    <Style style="99" color="#0000ff" paper="#efffef" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Python class name</Style>
+    <Style style="100" color="#007f7f" paper="#efffef" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Python function or method name</Style>
+    <Style style="101" color="#000000" paper="#efffef" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">Python operator</Style>
+    <Style style="102" color="#000000" paper="#efffef" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Python identifier</Style>
+    <Style style="105" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Start of an ASP Python fragment</Style>
+    <Style style="106" color="#808080" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python default</Style>
+    <Style style="107" color="#007f00" paper="#cfefcf" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python comment</Style>
+    <Style style="108" color="#007f7f" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python number</Style>
+    <Style style="109" color="#7f007f" paper="#cfefcf" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python double-quoted string</Style>
+    <Style style="110" color="#7f007f" paper="#cfefcf" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python single-quoted string</Style>
+    <Style style="111" color="#00007f" paper="#cfefcf" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">ASP Python keyword</Style>
+    <Style style="112" color="#7f0000" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python triple single-quoted string</Style>
+    <Style style="113" color="#7f0000" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python triple double-quoted string</Style>
+    <Style style="114" color="#0000ff" paper="#cfefcf" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">ASP Python class name</Style>
+    <Style style="115" color="#007f7f" paper="#cfefcf" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">ASP Python function or method name</Style>
+    <Style style="116" color="#000000" paper="#cfefcf" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="1">ASP Python operator</Style>
+    <Style style="117" color="#000000" paper="#cfefcf" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">ASP Python identifier</Style>
+    <Style style="118" color="#000033" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">PHP default</Style>
+    <Style style="119" color="#007f00" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">PHP double-quoted string</Style>
+    <Style style="120" color="#009f00" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">PHP single-quoted string</Style>
+    <Style style="121" color="#7f007f" paper="#fff8f8" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">PHP keyword</Style>
+    <Style style="122" color="#cc9900" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">PHP number</Style>
+    <Style style="123" color="#00007f" paper="#fff8f8" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">PHP variable</Style>
+    <Style style="124" color="#999999" paper="#fff8f8" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">PHP comment</Style>
+    <Style style="125" color="#666666" paper="#fff8f8" font="Comic Sans MS,9,-1,5,50,1,0,0,0,0" eolfill="0">PHP line comment</Style>
+    <Style style="126" color="#00007f" paper="#fff8f8" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">PHP double-quoted variable</Style>
+    <Style style="127" color="#000000" paper="#fff8f8" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">PHP operator</Style>
+  </Lexer>
+  <Lexer name="D">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Block comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Line comment</Style>
+    <Style style="3" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">DDoc style block comment</Style>
+    <Style style="4" color="#a0c0a0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Nesting comment</Style>
+    <Style style="5" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="6" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="7" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Secondary keyword</Style>
+    <Style style="8" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Documentation keyword</Style>
+    <Style style="9" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Type definition</Style>
+    <Style style="10" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">String</Style>
+    <Style style="11" color="#000000" paper="#e0c0e0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="12" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Character</Style>
+    <Style style="13" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="14" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="15" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">DDoc style line comment</Style>
+    <Style style="16" color="#3060a0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">DDoc keyword</Style>
+    <Style style="17" color="#804020" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">DDoc keyword error</Style>
+    <Style style="18" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Backquoted string</Style>
+    <Style style="19" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Raw string</Style>
+    <Style style="20" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 1</Style>
+    <Style style="21" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 2</Style>
+    <Style style="22" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 3</Style>
+  </Lexer>
+  <Lexer name="Batch">
+    <Style style="0" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="3" color="#7f007f" paper="#606060" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Label</Style>
+    <Style style="4" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Hide command character</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Courier New,10,-1,5,75,0,0,0,0,0" eolfill="0">External command</Style>
+    <Style style="6" color="#800080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Variable</Style>
+    <Style style="7" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Operator</Style>
+  </Lexer>
+  <Lexer name="C++">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C++ comment</Style>
+    <Style style="3" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C comment</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="8" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">IDL UUID</Style>
+    <Style style="9" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pre-processor block</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="12" color="#000000" paper="#e0c0e0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="15" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C++ comment</Style>
+    <Style style="16" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Secondary keywords and identifiers</Style>
+    <Style style="17" color="#3060a0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword</Style>
+    <Style style="18" color="#804020" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword error</Style>
+    <Style style="19" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Global classes and typedefs</Style>
+    <Style style="20" color="#7f007f" paper="#fff3ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">C++ raw string</Style>
+    <Style style="40" color="#b090b0" paper="#fff3ff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ raw string</Style>
+    <Style style="64" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive default</Style>
+    <Style style="65" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C comment</Style>
+    <Style style="66" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ comment</Style>
+    <Style style="67" color="#d0d0d0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C comment</Style>
+    <Style style="68" color="#90b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive number</Style>
+    <Style style="69" color="#9090b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive keyword</Style>
+    <Style style="70" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive double-quoted string</Style>
+    <Style style="71" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive single-quoted string</Style>
+    <Style style="72" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive IDL UUID</Style>
+    <Style style="73" color="#b0b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive pre-processor block</Style>
+    <Style style="74" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive operator</Style>
+    <Style style="75" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive identifier</Style>
+    <Style style="76" color="#000000" paper="#e0c0e0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Inactive unclosed string</Style>
+    <Style style="79" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C++ comment</Style>
+    <Style style="80" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive secondary keywords and identifiers</Style>
+    <Style style="81" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword</Style>
+    <Style style="82" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword error</Style>
+    <Style style="83" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive global classes and typedefs</Style>
+  </Lexer>
+  <Lexer name="TeX">
+    <Style style="0" color="#3f3f3f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Special</Style>
+    <Style style="2" color="#7f0000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Group</Style>
+    <Style style="3" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Symbol</Style>
+    <Style style="4" color="#007f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Command</Style>
+    <Style style="5" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Text</Style>
+  </Lexer>
+  <Lexer name="Fortran">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="3" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="4" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="5" color="#000000" paper="#e0c0e0" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="6" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="7" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="8" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="9" color="#b00040" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Intrinsic function</Style>
+    <Style style="10" color="#b04080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Extended function</Style>
+    <Style style="11" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pre-processor block</Style>
+    <Style style="12" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Dotted operator</Style>
+    <Style style="13" color="#e0c0e0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Label</Style>
+    <Style style="14" color="#000000" paper="#f0e080" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Continuation</Style>
+  </Lexer>
+  <Lexer name="CSS">
+    <Style style="0" color="#ff0080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Tag</Style>
+    <Style style="2" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Class selector</Style>
+    <Style style="3" color="#800000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pseudo-class</Style>
+    <Style style="4" color="#ff0000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Unknown pseudo-class</Style>
+    <Style style="5" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="6" color="#0040e0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">CSS1 property</Style>
+    <Style style="7" color="#ff0000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Unknown property</Style>
+    <Style style="8" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Value</Style>
+    <Style style="10" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">ID selector</Style>
+    <Style style="11" color="#ff8000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Important</Style>
+    <Style style="12" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">@-rule</Style>
+    <Style style="13" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="14" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="15" color="#00a0e0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">CSS2 property</Style>
+    <Style style="16" color="#800000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Attribute</Style>
+    <Style style="17" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">CSS3 property</Style>
+    <Style style="18" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pseudo-element</Style>
+    <Style style="19" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Extended CSS property</Style>
+    <Style style="20" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Extended pseudo-class</Style>
+    <Style style="21" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Extended pseudo-element</Style>
+    <Style style="22" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Media rule</Style>
+  </Lexer>
+  <Lexer name="C#">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">C++ comment</Style>
+    <Style style="3" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C comment</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="8" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">IDL UUID</Style>
+    <Style style="9" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pre-processor block</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="12" color="#000000" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="13" color="#007f00" paper="#e0ffe0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Verbatim string</Style>
+    <Style style="15" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style C++ comment</Style>
+    <Style style="16" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Secondary keywords and identifiers</Style>
+    <Style style="17" color="#3060a0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword</Style>
+    <Style style="18" color="#804020" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword error</Style>
+    <Style style="19" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Global classes and typedefs</Style>
+    <Style style="20" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">C++ raw string</Style>
+    <Style style="40" color="#b090b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ raw string</Style>
+    <Style style="64" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive default</Style>
+    <Style style="65" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C comment</Style>
+    <Style style="66" color="#90b090" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive C++ comment</Style>
+    <Style style="67" color="#d0d0d0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C comment</Style>
+    <Style style="68" color="#90b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive number</Style>
+    <Style style="69" color="#9090b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive keyword</Style>
+    <Style style="70" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive double-quoted string</Style>
+    <Style style="71" color="#b090b0" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive single-quoted string</Style>
+    <Style style="72" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive IDL UUID</Style>
+    <Style style="73" color="#b0b090" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive pre-processor block</Style>
+    <Style style="74" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Inactive operator</Style>
+    <Style style="75" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive identifier</Style>
+    <Style style="76" color="#000000" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Inactive unclosed string</Style>
+    <Style style="79" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc style C++ comment</Style>
+    <Style style="80" color="#c0c0c0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive secondary keywords and identifiers</Style>
+    <Style style="81" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword</Style>
+    <Style style="82" color="#c0c0c0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Inactive JavaDoc keyword error</Style>
+    <Style style="83" color="#b0b0b0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inactive global classes and typedefs</Style>
+  </Lexer>
+  <Lexer name="CMake">
+    <Style style="0" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#7f007f" paper="#eeeeee" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">String</Style>
+    <Style style="3" color="#7f007f" paper="#eeeeee" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Left quoted string</Style>
+    <Style style="4" color="#7f007f" paper="#eeeeee" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Right quoted string</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Function</Style>
+    <Style style="6" color="#800000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Variable</Style>
+    <Style style="7" color="#cc3300" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Label</Style>
+    <Style style="8" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined</Style>
+    <Style style="9" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">WHILE block</Style>
+    <Style style="10" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">FOREACH block</Style>
+    <Style style="11" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">IF block</Style>
+    <Style style="12" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">MACRO block</Style>
+    <Style style="13" color="#cc3300" paper="#eeeeee" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Variable within a string</Style>
+    <Style style="14" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+  </Lexer>
+  <Lexer name="PostScript">
+    <Style style="0" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#3f703f" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">DSC comment</Style>
+    <Style style="3" color="#3060a0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">DSC comment value</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Name</Style>
+    <Style style="6" color="#00007f" paper="#ffffff" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="7" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Literal</Style>
+    <Style style="8" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Immediately evaluated literal</Style>
+    <Style style="9" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Array parenthesis</Style>
+    <Style style="10" color="#3060a0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Dictionary parenthesis</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="0">Procedure parenthesis</Style>
+    <Style style="12" color="#7f007f" paper="#ffffff" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="0">Text</Style>
+    <Style style="13" color="#3f7f3f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Hexadecimal string</Style>
+    <Style style="14" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Base85 string</Style>
+    <Style style="15" color="#ffff00" paper="#ff0000" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Bad string character</Style>
+  </Lexer>
+  <Lexer name="YAML">
+    <Style style="0" color="#000000" paper="#ffffff" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#008800" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#000088" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="3" color="#880088" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="4" color="#880000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#008888" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Reference</Style>
+    <Style style="6" color="#ffffff" paper="#000088" font="Comic Sans MS,9,-1,5,75,0,0,0,0,0" eolfill="1">Document delimiter</Style>
+    <Style style="7" color="#333366" paper="#ffffff" font="Times New Roman,11,-1,5,50,0,0,0,0,0" eolfill="0">Text block marker</Style>
+    <Style style="8" color="#ffffff" paper="#ff0000" font="Times New Roman,11,-1,5,75,1,0,0,0,0" eolfill="1">Syntax error marker</Style>
+    <Style style="9" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Operator</Style>
+  </Lexer>
+  <Lexer name="Pascal">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">'{ ... }' style comment</Style>
+    <Style style="3" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">'(* ... *)' style comment</Style>
+    <Style style="4" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Line comment</Style>
+    <Style style="5" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">'{$ ... }' style pre-processor block</Style>
+    <Style style="6" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">'(*$ ... *)' style pre-processor block</Style>
+    <Style style="7" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="8" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Hexadecimal number</Style>
+    <Style style="9" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="10" color="#7f007f" paper="#ffffff" font="Times New Roman,11,-1,5,50,1,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="11" color="#000000" paper="#e0c0e0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">Unclosed string</Style>
+    <Style style="12" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Character</Style>
+    <Style style="13" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="14" color="#804080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inline asm</Style>
+  </Lexer>
+  <Lexer name="Guessed">
+    <Style style="0" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#408080" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#bc7a00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,1,0,0,0,0" eolfill="0">Preprocessor</Style>
+    <Style style="3" color="#008000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="4" color="#008000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Pseudo Keyword</Style>
+    <Style style="5" color="#b00040" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Type Keyword</Style>
+    <Style style="6" color="#666666" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="7" color="#aa22ff" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Word</Style>
+    <Style style="8" color="#008000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Builtin</Style>
+    <Style style="9" color="#0000ff" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Function or method name</Style>
+    <Style style="10" color="#0000ff" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Class name</Style>
+    <Style style="11" color="#0000ff" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Namespace</Style>
+    <Style style="12" color="#d2413a" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Exception</Style>
+    <Style style="13" color="#19177c" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="14" color="#880000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Constant</Style>
+    <Style style="15" color="#a0a000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Label</Style>
+    <Style style="16" color="#999999" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Entity</Style>
+    <Style style="17" color="#7d9029" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Attribute</Style>
+    <Style style="18" color="#008000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Tag</Style>
+    <Style style="19" color="#aa22ff" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Decorator</Style>
+    <Style style="20" color="#ba2121" paper="#ffffff" font="Comic Sans MS,10,-1,5,50,0,0,0,0,0" eolfill="0">String</Style>
+    <Style style="21" color="#ba2121" paper="#ffffff" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">Documentation string</Style>
+    <Style style="22" color="#bb6688" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Scalar</Style>
+    <Style style="23" color="#bb6622" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Escape</Style>
+    <Style style="24" color="#bb6688" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Regular expression</Style>
+    <Style style="25" color="#19177c" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Symbol</Style>
+    <Style style="26" color="#008000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Other string</Style>
+    <Style style="27" color="#666666" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="28" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Heading</Style>
+    <Style style="29" color="#800080" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Subheading</Style>
+    <Style style="30" color="#a00000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Deleted</Style>
+    <Style style="31" color="#00a000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Inserted</Style>
+    <Style style="40" color="#ff0000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Generic error</Style>
+    <Style style="41" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,1,0,0,0,0" eolfill="0">Emphasized text</Style>
+    <Style style="42" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Strong text</Style>
+    <Style style="43" color="#000080" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Prompt</Style>
+    <Style style="44" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Output</Style>
+    <Style style="45" color="#0040d0" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Traceback</Style>
+    <Style style="46" color="#000000" paper="#ff0000" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Error</Style>
+  </Lexer>
+  <Lexer name="SQL">
+    <Style style="0" color="#808080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">Comment line</Style>
+    <Style style="3" color="#7f7f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc style comment</Style>
+    <Style style="4" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Number</Style>
+    <Style style="5" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Keyword</Style>
+    <Style style="6" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Double-quoted string</Style>
+    <Style style="7" color="#7f007f" paper="#ffffff" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="0">Single-quoted string</Style>
+    <Style style="8" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">SQL*Plus keyword</Style>
+    <Style style="9" color="#007f00" paper="#e0ffe0" font="Courier New,10,-1,5,50,0,0,0,0,0" eolfill="1">SQL*Plus prompt</Style>
+    <Style style="10" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,75,0,0,0,0,0" eolfill="0">Operator</Style>
+    <Style style="11" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Identifier</Style>
+    <Style style="13" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">SQL*Plus comment</Style>
+    <Style style="15" color="#007f00" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0"># comment line</Style>
+    <Style style="17" color="#3060a0" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword</Style>
+    <Style style="18" color="#804020" paper="#ffffff" font="Comic Sans MS,9,-1,5,50,0,0,0,0,0" eolfill="0">JavaDoc keyword error</Style>
+    <Style style="19" color="#4b0082" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 1</Style>
+    <Style style="20" color="#b00040" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 2</Style>
+    <Style style="21" color="#8b0000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 3</Style>
+    <Style style="22" color="#800080" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">User defined 4</Style>
+    <Style style="23" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Quoted identifier</Style>
+  </Lexer>
+  <Lexer name="Diff">
+    <Style style="0" color="#000000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Default</Style>
+    <Style style="1" color="#007f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Comment</Style>
+    <Style style="2" color="#7f7f00" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Command</Style>
+    <Style style="3" color="#7f0000" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Header</Style>
+    <Style style="4" color="#7f007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Position</Style>
+    <Style style="5" color="#007f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Removed line</Style>
+    <Style style="6" color="#00007f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Added line</Style>
+    <Style style="7" color="#7f7f7f" paper="#ffffff" font="Verdana,10,-1,5,50,0,0,0,0,0" eolfill="0">Changed line</Style>
+  </Lexer>
+</HighlightingStyles>

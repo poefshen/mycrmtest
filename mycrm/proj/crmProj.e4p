@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-4.6.dtd">
+<!-- eric4 project file for project crmProj -->
+<!-- Saved: 2012-08-08, 23:10:42 -->
+<!-- Copyright (C) 2012 ,  -->
+<Project version="4.6">
+  <Language></Language>
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <ProjectType>Qt4</ProjectType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email></Email>
+  <Sources>
+    <Source>__init__.py</Source>
+    <Source>12 create sample data.pyw</Source>
+    <Source>99 Other information.pyw</Source>
+    <Source>z1 database reference numbers.pyw</Source>
+    <Source>z2 additional knowledge.pyw</Source>
+    <Source>10 create table.pyw</Source>
+    <Source>11 create default data.pyw</Source>
+    <Source>13 create GUI.pyw</Source>
+    <Source>14 main of GUI.pyw</Source>
+    <Source>15 Splash Screen.pyw</Source>
+    <Source>17 reference data dialog.pyw</Source>
+    <Source>30 main form</Source>
+    <Source>20 asset delegate</Source>
+    <Source>25 log delegate.pyw</Source>
+    <Source>40 mainform_1init.pyw</Source>
+    <Source>50 mainform_2other.pyw</Source>
+  </Sources>
+  <Forms>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Resources>
+  </Resources>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES" />
+  </FiletypeAssociations>
+</Project>

@@ -1,0 +1,237 @@
+class MainForm(QDialog):
+
+    def __init__(self):
+        super(MainForm, self).__init__()
+
+        self.assetModel = QSqlRelationalTableModel(self)
+        self.assetModel.setTable("assets")
+        self.assetModel.setRelation(CATEGORYID,
+                QSqlRelation("categories", "id", "name"))
+        self.assetModel.setSort(ROOM, Qt.AscendingOrder)
+        self.assetModel.setHeaderData(ID, Qt.Horizontal,
+                QVariant("ID"))
+        self.assetModel.setHeaderData(NAME, Qt.Horizontal,
+                QVariant("Name"))
+        self.assetModel.setHeaderData(CATEGORYID, Qt.Horizontal,
+                QVariant("Category"))
+        self.assetModel.setHeaderData(ROOM, Qt.Horizontal,
+                QVariant("Room"))
+        self.assetModel.select()
+
+        self.assetView = QTableView()
+        self.assetView.setModel(self.assetModel)
+        self.assetView.setItemDelegate(AssetDelegate(self))
+        self.assetView.setSelectionMode(QTableView.SingleSelection)
+        self.assetView.setSelectionBehavior(QTableView.SelectRows)
+        self.assetView.setColumnHidden(ID, True)
+        self.assetView.resizeColumnsToContents()
+        assetLabel = QLabel("A&ssets")
+        assetLabel.setBuddy(self.assetView)
+
+        self.logModel = QSqlRelationalTableModel(self)
+        self.logModel.setTable("logs")
+        self.logModel.setRelation(ACTIONID,
+                QSqlRelation("actions", "id", "name"))
+        self.logModel.setSort(DATE, Qt.AscendingOrder)
+        self.logModel.setHeaderData(DATE, Qt.Horizontal,
+                QVariant("Date"))
+        self.logModel.setHeaderData(ACTIONID, Qt.Horizontal,
+                QVariant("Action"))
+        self.logModel.select()
+
+        self.logView = QTableView()
+        self.logView.setModel(self.logModel)
+        self.logView.setItemDelegate(LogDelegate(self))
+        self.logView.setSelectionMode(QTableView.SingleSelection)
+        self.logView.setSelectionBehavior(QTableView.SelectRows)
+        self.logView.setColumnHidden(ID, True)
+        self.logView.setColumnHidden(ASSETID, True)
+        self.logView.resizeColumnsToContents()
+        self.logView.horizontalHeader().setStretchLastSection(True)
+        logLabel = QLabel("&Logs")
+        logLabel.setBuddy(self.logView)
+
+        addAssetButton = QPushButton("&Add Asset")
+        deleteAssetButton = QPushButton("&Delete Asset")
+        addActionButton = QPushButton("Add A&ction")
+        deleteActionButton = QPushButton("Delete Ac&tion")
+        editActionsButton = QPushButton("&Edit Actions...")
+        editCategoriesButton = QPushButton("Ed&it Categories...")
+        quitButton = QPushButton("&Quit")
+        for button in (addAssetButton, deleteAssetButton,
+                addActionButton, deleteActionButton,
+                editActionsButton, editCategoriesButton, quitButton):
+            if MAC:
+                button.setDefault(False)
+                button.setAutoDefault(False)
+            else:
+                button.setFocusPolicy(Qt.NoFocus)
+
+        dataLayout = QVBoxLayout()
+        dataLayout.addWidget(assetLabel)
+        dataLayout.addWidget(self.assetView, 1)
+        dataLayout.addWidget(logLabel)
+        dataLayout.addWidget(self.logView)
+        buttonLayout = QVBoxLayout()
+        buttonLayout.addWidget(addAssetButton)
+        buttonLayout.addWidget(deleteAssetButton)
+        buttonLayout.addWidget(addActionButton)
+        buttonLayout.addWidget(deleteActionButton)
+        buttonLayout.addWidget(editActionsButton)
+        buttonLayout.addWidget(editCategoriesButton)
+        buttonLayout.addStretch()
+        buttonLayout.addWidget(quitButton)
+        layout = QHBoxLayout()
+        layout.addLayout(dataLayout, 1)
+        layout.addLayout(buttonLayout)
+        self.setLayout(layout)
+
+        self.connect(self.assetView.selectionModel(),
+                SIGNAL("currentRowChanged(QModelIndex,QModelIndex)"),
+                self.assetChanged)
+        self.connect(addAssetButton, SIGNAL("clicked()"),
+                     self.addAsset)
+        self.connect(deleteAssetButton, SIGNAL("clicked()"),
+                     self.deleteAsset)
+        self.connect(addActionButton, SIGNAL("clicked()"),
+                     self.addAction)
+        self.connect(deleteActionButton, SIGNAL("clicked()"),
+                     self.deleteAction)
+        self.connect(editActionsButton, SIGNAL("clicked()"),
+                     self.editActions)
+        self.connect(editCategoriesButton, SIGNAL("clicked()"),
+                     self.editCategories)
+        self.connect(quitButton, SIGNAL("clicked()"), self.done)
+
+        self.assetChanged(self.assetView.currentIndex())
+        self.setMinimumWidth(650)
+        self.setWindowTitle("Asset Manager")
+
+
+    def done(self, result=1):
+        query = QSqlQuery()
+        query.exec_("DELETE FROM logs WHERE logs.assetid NOT IN"
+                    "(SELECT id FROM assets)")
+        QDialog.done(self, 1)
+
+
+    def assetChanged(self, index):
+        if index.isValid():
+            record = self.assetModel.record(index.row())
+            id = record.value("id").toInt()[0]
+            self.logModel.setFilter(QString("assetid = %1").arg(id))
+        else:
+            self.logModel.setFilter("assetid = -1")
+        self.logModel.reset() # workaround for Qt <= 4.3.3/SQLite bug
+        self.logModel.select()
+        self.logView.horizontalHeader().setVisible(
+                self.logModel.rowCount() > 0)
+        if PYQT_VERSION_STR < "4.1.0":
+            self.logView.setColumnHidden(ID, True)
+            self.logView.setColumnHidden(ASSETID, True)
+
+
+    def addAsset(self):
+        row = self.assetView.currentIndex().row() \
+            if self.assetView.currentIndex().isValid() else 0
+
+        QSqlDatabase.database().transaction()
+        self.assetModel.insertRow(row)
+        index = self.assetModel.index(row, NAME)
+        self.assetView.setCurrentIndex(index)
+
+        assetid = 1
+        query = QSqlQuery()
+        query.exec_("SELECT MAX(id) FROM assets")
+        if query.next():
+            assetid = query.value(0).toInt()[0]
+        query.prepare("INSERT INTO logs (assetid, date, actionid) "
+                      "VALUES (:assetid, :date, :actionid)")
+        query.bindValue(":assetid", QVariant(assetid + 1))
+        query.bindValue(":date", QVariant(QDate.currentDate()))
+        query.bindValue(":actionid", QVariant(ACQUIRED))
+        query.exec_()
+        QSqlDatabase.database().commit()
+        self.assetView.edit(index)
+
+
+    def deleteAsset(self):
+        index = self.assetView.currentIndex()
+        if not index.isValid():
+            return
+        QSqlDatabase.database().transaction()
+        record = self.assetModel.record(index.row())
+        assetid = record.value(ID).toInt()[0]
+        logrecords = 1
+        query = QSqlQuery(QString("SELECT COUNT(*) FROM logs "
+                                  "WHERE assetid = %1").arg(assetid))
+        if query.next():
+            logrecords = query.value(0).toInt()[0]
+        msg = QString("<font color=red>Delete</font><br><b>%1</b>"
+                      "<br>from room %2") \
+                      .arg(record.value(NAME).toString()) \
+                      .arg(record.value(ROOM).toString())
+        if logrecords > 1:
+            msg += QString(", along with %1 log records") \
+                   .arg(logrecords)
+        msg += "?"
+        if QMessageBox.question(self, "Delete Asset", msg,
+                QMessageBox.Yes|QMessageBox.No) == QMessageBox.No:
+            QSqlDatabase.database().rollback()
+            return
+        query.exec_(QString("DELETE FROM logs WHERE assetid = %1") \
+                    .arg(assetid))
+        self.assetModel.removeRow(index.row())
+        self.assetModel.submitAll()
+        QSqlDatabase.database().commit()
+        self.assetChanged(self.assetView.currentIndex())
+
+
+    def addAction(self):
+        index = self.assetView.currentIndex()
+        if not index.isValid():
+            return
+        QSqlDatabase.database().transaction()
+        record = self.assetModel.record(index.row())
+        assetid = record.value(ID).toInt()[0]
+
+        row = self.logModel.rowCount()
+        self.logModel.insertRow(row)
+        self.logModel.setData(self.logModel.index(row, ASSETID),
+                              QVariant(assetid))
+        self.logModel.setData(self.logModel.index(row, DATE),
+                              QVariant(QDate.currentDate()))
+        QSqlDatabase.database().commit()
+        index = self.logModel.index(row, ACTIONID)
+        self.logView.setCurrentIndex(index)
+        self.logView.edit(index)
+
+
+    def deleteAction(self):
+        index = self.logView.currentIndex()
+        if not index.isValid():
+            return
+        record = self.logModel.record(index.row())
+        action = record.value(ACTIONID).toString()
+        if action == "Acquired":
+            QMessageBox.information(self, "Delete Log",
+                    "The 'Acquired' log record cannot be deleted.<br>"
+                    "You could delete the entire asset instead.")
+            return
+        when = unicode(record.value(DATE).toString())
+        if QMessageBox.question(self, "Delete Log",
+                "Delete log<br>%s %s?" % (when, action),
+                QMessageBox.Yes|QMessageBox.No) == QMessageBox.No:
+            return
+        self.logModel.removeRow(index.row())
+        self.logModel.submitAll()
+
+
+    def editActions(self):
+        form = ReferenceDataDlg("actions", "Action", self)
+        form.exec_()
+
+
+    def editCategories(self):
+        form = ReferenceDataDlg("categories", "Category", self)
+        form.exec_()

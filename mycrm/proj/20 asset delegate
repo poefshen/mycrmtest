@@ -1,0 +1,77 @@
+# delegate inherites from QSqlRelationDelegate
+class AssetDelegate(QSqlRelationalDelegate):
+
+# refresher1: structure of class:
+#   ->in all method/member, the first argument is self to represent the class
+
+# refresher2: about init of Qt Class:
+#   ->(1) init will need 2 argument: "self" and "parent"(default is none, usually)
+#   ->(2) super will need "className" and "self", then "__init__" of parent
+#   ->Note: "super(AssetDelegate, self)" equals QSqlRelationDelegate
+    def __init__(self, parent=None):
+        super(AssetDelegate, self).__init__(parent)
+
+# We are using default for all the functions except for:
+#  paint/createEditor/setEditorData/setModelData
+
+# about paint: it is a "function", we use xx.paint(xx) here
+# redefine paint / only when index.column = ROOM
+#   -> it will change the "option.displayAlignment" to modify alignment
+#   -> Note we are using "|=" instead of "="
+# !! paint has 3 argument, where it get those items? 
+#   -> I think they should have default
+# !! Even there is default, how to locate "index"? as we are using "index.column()"
+# we need to QStyleOptionViewItem(option) before we modify the option
+    def paint(self, painter, option, index):
+        myoption = QStyleOptionViewItem(option)
+        if index.column() == ROOM:
+            myoption.displayAlignment |= Qt.AlignRight|Qt.AlignVCenter
+        QSqlRelationalDelegate.paint(self, painter, myoption, index)
+
+# about createEditor: it will return an "object", as return editor here
+    def createEditor(self, parent, option, index):
+        if index.column() == ROOM: #again, where is index
+            editor = QLineEdit(parent)
+            regex = QRegExp(r"(?:0[1-9]|1[0124-9]|2[0-7])"
+                            r"(?:0[1-9]|[1-5][0-9]|6[012])")
+            validator = QRegExpValidator(regex, parent)
+            # !! so a lineEdit with "Validator/InputMask/Alignment" 
+            #   -> equals en editor the delegator creates by default? 
+            #   -> as they both has "parent", but the former does not have 
+            #   -> "option" and "index"
+            editor.setValidator(validator)
+            editor.setInputMask("9999")
+            editor.setAlignment(Qt.AlignRight|Qt.AlignVCenter)
+            return editor
+        else:
+            return QSqlRelationalDelegate.createEditor(self, parent,
+                                                       option, index)
+
+# about setEditorData:
+#   -> the method will take an "editor" and "index" as argument
+#   -> you can use editor.setText(xx) to set the text (editor is from above)
+# Still, when "index.column" equals "ROOM", we are using some sort of data 
+#   -> inside "index" to display. 
+# !! you need to study a bit to find out what is index.model().data(xx)
+    def setEditorData(self, editor, index):
+        if index.column() == ROOM:
+            text = index.model().data(index, Qt.DisplayRole).toString()
+            editor.setText(text)
+        else:
+            QSqlRelationalDelegate.setEditorData(self, editor, index)
+
+# about setModelData:
+#   -> it takes "editor", "model", "index" as argument
+#   -> what we modify is model actually for the method
+# how setModelData Works:
+#   ->obviously it will set data in model after user modification
+#   -> also this method is automatically called when the lineEdit is modified
+# When index.column() is "ROOM", it will call model's setData function
+#   -> again, it will need the index to locate where to save those datas
+    def setModelData(self, editor, model, index):
+        if index.column() == ROOM:
+            model.setData(index, QVariant(editor.text()))
+        else:
+            QSqlRelationalDelegate.setModelData(self, editor, model,
+                                                index)
+
